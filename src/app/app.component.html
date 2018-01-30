@@ -1,10 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class="container">
   <h1>
     good luck with {{ title }}!
   </h1>
 </div>
-<h2>Here are some links to help you start: </h2>
+<!-- <h2>Here are some links to help you start: </h2>
 <ul>
 	<li><a href="#">ng new project</a></li>
 	<li><a href="#">npm install, bower install</a></li>
@@ -13,6 +13,18 @@
 	<li><a href="#">npm install p5 --save</a></li>
 	<li><a href="#">npm install tsd -g</a></li>
 	<li><a href="#">at the top of app component.ts:</a></li>
-		<!-- <li>/// <reference path="../../node_modules/p5/lib/p5.global-mode.d.ts" /></li> -->
+</ul> -->
 
-</ul>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Back Home</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="other">get me out of here</a></li>
+      <li><a routerLink="canvas">canvas component</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
